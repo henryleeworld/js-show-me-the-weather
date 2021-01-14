@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="今天天氣如何" />
+        <meta property="og:description" content="你有看氣象預報的習慣嗎？對於要出門的朋友來說，隨時掌握今天的天氣狀況應該是相當重要的一件事，尤其是今天會不會下雨？要不要攜帶雨具？" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css" integrity="sha512-Fdq8QvrEd3TD4heN8gNTOl79sAZR7zsiHIDQbE5eEBxx8pPfb/yJHaBWxhoG7SNcQiBmrrUHlg5TiNX4ovt6Jg==" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons-wind.min.css" integrity="sha512-Ydyj0LLrJGMf7yUSU+QxZE4Pu/jVIutpdTOAozUrzZMslo+vLMX64rghLxEs+AKpN+GmnVNgXoeLlMwSqtyjPw==" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="css/show-me-the-weather.css" />
+        <title>今天天氣如何</title>
+    </head>
+    <body>
+        <div id="main">
+            <h1>今天天氣如何</h1>
+            <div class="visual-only" aria-hidden="true">
+                <div id="quick-view">
+                    <div id="weather-icons">
+                        <i class="wi"></i>
+                        <i class="wi"></i>
+                    </div>
+
+                    <div id="loading">載入中<span>.</span><span>.</span><span>.</span></div>
+
+                    <span id="tempF" class="show">
+                        <span></span>
+                        <i class="wi wi-fahrenheit"></i>
+                    </span>
+
+                    <span id="tempC" class="hide">
+                        <span></span>
+                        <i class="wi wi-celsius"></i>
+                    </span>
+                </div>
+                <div id="grid">
+                    <div id="location">…</div>
+                    <div id="status">…</div>
+                    <div id="wind">
+                        <span class="compass">
+                            <i class="wi">…</i>
+                        </span>
+                        <span id="miles" class="show"> </span>
+                        <span id="meters" class="hide"> </span>
+                    </div>
+                </div>
+                <button>F / C</button>
+            </div>
+            <p class="visually-hidden">
+                目前沒有天氣資料。
+            </p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" defer></script>
+        <script src="js/show-me-the-weather.js" defer></script>
+    </body>
+</html>
